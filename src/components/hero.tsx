@@ -17,7 +17,7 @@ const hero = () => {
         </p>
 
         <div className="mt-12 flex gap-3">
-          <button className="rounded-lg bg-gradient-to-r from-[#ff6a21] to-[#e83e8c] px-4 py-3 text-sm font-semibold text-white shadow-sm transition hover:opacity-90">
+          <button className="rounded-lg bg-linear-to-r from-[#ff6a21] to-[#e83e8c] px-4 py-3 text-sm font-semibold text-white shadow-sm transition hover:opacity-90">
             Explore Technologies
           </button>
 
@@ -31,7 +31,7 @@ const hero = () => {
         <img
           src={heroImg}
           alt="Hero section's image..."
-          className="w-full max-w-[540px] object-contain"
+          className="w-full max-w-135 object-contain"
         />
       </div>
     </div>
