@@ -2,7 +2,7 @@ import heroImg from "../assets/banner-stack.png";
 
 const hero = () => {
   return (
-   <div className="flex min-h-130 items-center justify-between gap-10 px-[8%] max-w-360 mx-auto">
+   <div className="flex min-h-130 flex-col items-center justify-between gap-10 px-[5%] py-10 max-w-360 mx-auto md:flex-row md:px-[8%] md:py-0">
       <div className="w-full max-w-155">
         <h1 className="text-5xl font-bold leading-[1.15] text-[#07142f]">
           Build Your Ideal
