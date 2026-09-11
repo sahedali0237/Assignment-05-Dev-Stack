@@ -4,7 +4,7 @@
     "name": "React",
     "category": "Frontend",
     "description": "A component-based JavaScript library for building fast and interactive user interfaces.",
-    "icon": "https://techicons.dev/icons/react",
+    "icon": "https://skillicons.dev/icons?i=react",
     "rating": 4.9,
     "difficulty": "Beginner-Friendly",
     "badge": "Popular"
@@ -14,7 +14,7 @@
     "name": "Next.js",
     "category": "Frontend",
     "description": "A React framework for building fast, production-ready web applications with server-side rendering.",
-    "icon": "https://techicons.dev/icons/nextjs",
+    "icon": "https://skillicons.dev/icons?i=nextjs",
     "rating": 4.8,
     "difficulty": "Intermediate",
     "badge": "Full Stack"
@@ -24,7 +24,7 @@
     "name": "Vue.js",
     "category": "Frontend",
     "description": "A progressive JavaScript framework for creating user interfaces and single-page applications.",
-    "icon": "https://techicons.dev/icons/vuejs",
+    "icon": "https://skillicons.dev/icons?i=vue",
     "rating": 4.7,
     "difficulty": "Beginner-Friendly",
     "badge": "Flexible"
@@ -34,7 +34,7 @@
     "name": "Node.js",
     "category": "Backend",
     "description": "A JavaScript runtime built on Chrome's V8 engine for developing scalable server-side applications.",
-    "icon": "https://techicons.dev/icons/nodejs",
+    "icon": "https://skillicons.dev/icons?i=nodejs",
     "rating": 4.8,
     "difficulty": "Intermediate",
     "badge": "Essential"
@@ -44,7 +44,7 @@
     "name": "Express.js",
     "category": "Backend",
     "description": "A lightweight Node.js web framework for building APIs and server-side applications.",
-    "icon": "https://techicons.dev/icons/express",
+    "icon": "https://skillicons.dev/icons?i=express",
     "rating": 4.7,
     "difficulty": "Beginner-Friendly",
     "badge": "Fast"
@@ -54,7 +54,7 @@
     "name": "PostgreSQL",
     "category": "Database",
     "description": "A powerful open-source relational database known for reliability, performance, and advanced SQL features.",
-    "icon": "https://techicons.dev/icons/postgresql",
+    "icon": "https://skillicons.dev/icons?i=postgres",
     "rating": 4.9,
     "difficulty": "Intermediate",
     "badge": "Top SQL"
@@ -64,7 +64,7 @@
     "name": "MongoDB",
     "category": "Database",
     "description": "A document-oriented database designed for flexible data models and modern application development.",
-    "icon": "https://techicons.dev/icons/mongodb",
+    "icon": "https://skillicons.dev/icons?i=mongodb",
     "rating": 4.8,
     "difficulty": "Beginner-Friendly",
     "badge": "Flexible"
@@ -74,7 +74,7 @@
     "name": "JavaScript",
     "category": "Language",
     "description": "A versatile programming language used to create interactive websites and full-stack applications.",
-    "icon": "https://techicons.dev/icons/javascript",
+    "icon": "https://skillicons.dev/icons?i=js",
     "rating": 4.9,
     "difficulty": "Beginner-Friendly",
     "badge": "Essential"
@@ -84,7 +84,7 @@
     "name": "TypeScript",
     "category": "Language",
     "description": "A strongly typed programming language that builds on JavaScript for safer and more maintainable applications.",
-    "icon": "https://techicons.dev/icons/typescript",
+    "icon": "https://skillicons.dev/icons?i=ts",
     "rating": 4.8,
     "difficulty": "Intermediate",
     "badge": "Reliable"
@@ -94,7 +94,7 @@
     "name": "Python",
     "category": "Language",
     "description": "A readable and versatile programming language widely used for web development, automation, data, and AI.",
-    "icon": "https://techicons.dev/icons/python",
+    "icon": "https://skillicons.dev/icons?i=py",
     "rating": 4.9,
     "difficulty": "Beginner-Friendly",
     "badge": "Popular"
@@ -104,7 +104,7 @@
     "name": "Tailwind CSS",
     "category": "Styling",
     "description": "A utility-first CSS framework for rapidly building modern and responsive user interfaces.",
-    "icon": "https://techicons.dev/icons/tailwindcss",
+    "icon": "https://skillicons.dev/icons?i=tailwind",
     "rating": 4.8,
     "difficulty": "Beginner-Friendly",
     "badge": "Utility"
@@ -114,7 +114,7 @@
     "name": "Docker",
     "category": "DevOps",
     "description": "A platform for packaging applications and their dependencies into portable containers.",
-    "icon": "https://techicons.dev/icons/docker",
+    "icon": "https://skillicons.dev/icons?i=docker",
     "rating": 4.8,
     "difficulty": "Intermediate",
     "badge": "Containers"
@@ -124,7 +124,7 @@
     "name": "Git",
     "category": "Tools",
     "description": "A distributed version control system for tracking changes and collaborating on software projects.",
-    "icon": "https://techicons.dev/icons/git",
+    "icon": "https://skillicons.dev/icons?i=git",
     "rating": 4.9,
     "difficulty": "Beginner-Friendly",
     "badge": "Essential"
@@ -134,7 +134,7 @@
     "name": "GitHub",
     "category": "Tools",
     "description": "A development platform for hosting repositories, collaborating on code, and managing software projects.",
-    "icon": "https://techicons.dev/icons/github",
+    "icon": "https://skillicons.dev/icons?i=github",
     "rating": 4.9,
     "difficulty": "Beginner-Friendly",
     "badge": "Popular"
@@ -144,7 +144,7 @@
     "name": "Vite",
     "category": "Tools",
     "description": "A modern frontend build tool that provides fast development startup and efficient production builds.",
-    "icon": "https://techicons.dev/icons/vite",
+    "icon": "https://skillicons.dev/icons?i=vite",
     "rating": 4.8,
     "difficulty": "Beginner-Friendly",
     "badge": "Fast"

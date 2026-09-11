@@ -1,5 +1,7 @@
-
+import { use, useState } from "react";
+import { toast } from "react-toastify";
 import type { dataType } from "../../type/type";
+import TechnologyCard from "./TechnologyCard";
 
 interface TechnologiesProps {
   dataPromise: Promise<dataType[]>;
@@ -12,6 +14,26 @@ const AllTechnologies = ({ dataPromise }: TechnologiesProps) => {
 
 
 
+const data = use(dataPromise);
+  const [stack, setStack] = useState<dataType[]>([]);
+
+
+  const handleAddToStack = (technology: dataType) => {
+    const alreadyAdded = stack.some((item) => item.id === technology.id);
+
+
+    if (alreadyAdded) {
+      toast.warning(`${technology.name} is already in your stack!`);
+      return;
+    }
+
+
+    setStack((previousStack) => [...previousStack, technology]);
+    toast.success(`${technology.name} added to your stack!`);
+  };
+
+
+ 
 
 
   return (
@@ -31,6 +53,24 @@ const AllTechnologies = ({ dataPromise }: TechnologiesProps) => {
         </div>
 
 
+      
+
+<div className="grid grid-cols-1 gap-6 lg:grid-cols-[minmax(0,1fr)_270px]">
+          <div className="grid grid-cols-1 gap-5 md:grid-cols-2 xl:grid-cols-3">
+            {data.map((technology) => (
+              <TechnologyCard
+                key={technology.id}
+                technology={technology}
+                isAdded={stack.some((item) => item.id === technology.id)}
+                onAdd={handleAddToStack}
+              />
+            ))}
+          </div>
+
+
+          
+       
+        </div>
 
         
       </div>
