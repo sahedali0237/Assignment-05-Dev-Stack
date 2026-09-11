@@ -1,14 +1,20 @@
 import type { dataType } from "../../type/type";
 
-
-interface TechnologyProps {
-  dataPromise: dataType[];
+interface TechnologiesProps {
+  data: dataType[];
 }
 
-const Technology: React.FC<TechnologyProps> = ({ dataPromise }) => {
-  console.log(dataPromise);
-
-  return null;
+const AllTechnologies = ({ data }: TechnologiesProps) => {
+  return (
+    <section>
+      {data.map((technology) => (
+        <div key={technology.id}>
+          <h2>{technology.name}</h2>
+          <p>{technology.description}</p>
+        </div>
+      ))}
+    </section>
+  );
 };
 
-export default Technology;
+export default AllTechnologies;
