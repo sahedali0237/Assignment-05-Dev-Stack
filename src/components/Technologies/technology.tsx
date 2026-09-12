@@ -2,19 +2,14 @@ import { use, useState } from "react";
 import { toast } from "react-toastify";
 import type { dataType } from "../../type/type";
 import TechnologyCard from "./TechnologyCard";
+import TechnologySidebar from "./technologySidebar";
 
 interface TechnologiesProps {
   dataPromise: Promise<dataType[]>;
 }
 
 const AllTechnologies = ({ dataPromise }: TechnologiesProps) => {
- 
-
-
-
-
-
-const data = use(dataPromise);
+  const data = use(dataPromise);
   const [stack, setStack] = useState<dataType[]>([]);
 
 
@@ -26,15 +21,29 @@ const data = use(dataPromise);
       toast.warning(`${technology.name} is already in your stack!`);
       return;
     }
-
-
+    
     setStack((previousStack) => [...previousStack, technology]);
     toast.success(`${technology.name} added to your stack!`);
   };
 
+  const handleRemoveFromStack = (id: string) => {
+    const removedTechnology = stack.find((item) => item.id === id);
 
- 
+    setStack((previousStack) => previousStack.filter((item) => item.id !== id));
 
+    if (removedTechnology) {
+      toast.warning(`${removedTechnology.name} removed from your stack!`);
+    }
+  };
+
+  const handleRemoveAll = () => {
+    if (stack.length === 0) {
+      return;
+    }
+
+    setStack([]);
+    toast.warning("All technologies removed from your stack!");
+  };
 
   return (
     <section className="bg-white px-4 py-12 sm:px-6 lg:px-8">
@@ -52,10 +61,7 @@ const data = use(dataPromise);
           </p>
         </div>
 
-
-      
-
-<div className="grid grid-cols-1 gap-6 lg:grid-cols-[minmax(0,1fr)_270px]">
+        <div className="grid grid-cols-1 gap-6 lg:grid-cols-[minmax(0,1fr)_270px]">
           <div className="grid grid-cols-1 gap-5 md:grid-cols-2 xl:grid-cols-3">
             {data.map((technology) => (
               <TechnologyCard
@@ -67,12 +73,14 @@ const data = use(dataPromise);
             ))}
           </div>
 
+          <TechnologySidebar
+            stack={stack}
+            onRemove={handleRemoveFromStack}
+            onRemoveAll={handleRemoveAll}
+          />
 
-          
-       
         </div>
 
-        
       </div>
     </section>
   );
