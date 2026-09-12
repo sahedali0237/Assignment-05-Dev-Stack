@@ -1,8 +1,19 @@
+import { useState } from "react";
 import heroImg from "../assets/banner-stack.png";
 
 const hero = () => {
+  const [heroButton, setHeroButton] = useState("Explore Technologies");
+
+  const handleExploreTechnologies = () => {
+    setHeroButton("Explore Technologies");
+  };
+
+  const handleLearnMore = () => {
+    setHeroButton("Learn More");
+  };
+
   return (
-   <div className="flex min-h-130 flex-col items-center justify-between gap-10 px-[5%] py-10 max-w-360 mx-auto md:flex-row md:px-[8%] md:py-0">
+    <div className="flex min-h-130 flex-col items-center justify-between gap-10 px-[5%] py-10 max-w-360 mx-auto md:flex-row md:px-[8%] md:py-0">
       <div className="w-full max-w-155">
         <h1 className="text-5xl font-bold leading-[1.15] text-[#07142f]">
           Build Your Ideal
@@ -16,12 +27,26 @@ const hero = () => {
           side by side, and put together the stack that fits your next project.
         </p>
 
-        <div className="mt-12 flex gap-3">
-          <button className="rounded-lg bg-linear-to-r from-[#ff6a21] to-[#e83e8c] px-4 py-3 text-sm font-semibold text-white shadow-sm transition hover:opacity-90">
+        <div className="flex gap-4 pt-5">
+          <button
+            onClick={handleExploreTechnologies}
+            className={`rounded-lg px-4 py-3 text-sm font-semibold shadow-sm transition ${
+              heroButton === "Explore Technologies"
+                ? "bg-linear-to-r from-[#ff6a21] to-[#e83e8c] text-white"
+                : "border border-gray-200 bg-white text-[#475569] hover:bg-gray-50"
+            }`}
+          >
             Explore Technologies
           </button>
 
-          <button className="rounded-lg border border-gray-200 bg-white px-12 py-3 text-sm font-medium text-[#475569] shadow-sm transition hover:bg-gray-50">
+          <button
+            onClick={handleLearnMore}
+            className={`rounded-lg px-12 py-3 text-sm font-medium shadow-sm transition ${
+              heroButton === "Learn More"
+                ? "bg-linear-to-r from-[#ff6a21] to-[#e83e8c] text-white"
+                : "border border-gray-200 bg-white text-[#475569] hover:bg-gray-50"
+            }`}
+          >
             Learn More
           </button>
         </div>
